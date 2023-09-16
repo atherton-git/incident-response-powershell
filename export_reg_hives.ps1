@@ -8,7 +8,7 @@ $RegistryHives = @(
 )
 
 # Specify the output directory where the .reg files will be saved
-$OutputDirectory = "c:\reg-export"
+$OutputDirectory = "$env:SystemDrive\reg-export"
 
 # Create the output directory if it doesn't exist
 if (-not (Test-Path -Path $OutputDirectory -PathType Container)) {
